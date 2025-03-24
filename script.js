@@ -99,6 +99,10 @@ const pauseSong = () => {
 	audio.pause();
 };
 
+const playNextSong = () => {
+	
+}
+
 const renderSongs = (array) => {
 	const songsHTML = array
 		.map((song) => {
