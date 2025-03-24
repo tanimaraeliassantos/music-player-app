@@ -89,15 +89,15 @@ const playSong = (id) => {
 		audio.currentTime = userData?.songCurrentTime;
 	}
 	userData.currentSong = song;
-	playButton.classList.add("playing");
+	playButton.classList.add('playing');
 	audio.play();
 };
 
 const pauseSong = () => {
 	userData.songCurrentTime = audio.currentTime;
-	playButton.classList.remove("playing");
+	playButton.classList.remove('playing');
 	audio.pause();
-}
+};
 
 const renderSongs = (array) => {
 	const songsHTML = array
@@ -118,13 +118,15 @@ const renderSongs = (array) => {
 	playlistSongs.innerHTML = songsHTML;
 };
 
-playButton.addEventListener("click", () =>{
-	if(userData?.currentSong === null) {
-		playSong(userData?.songs[0].id)
+playButton.addEventListener('click', () => {
+	if (userData?.currentSong === null) {
+		playSong(userData?.songs[0].id);
 	} else {
-		playSong(userData?.currentSong.id)
+		playSong(userData?.currentSong.id);
 	}
 });
+
+pauseButton.addEventListener('click', pauseSong);
 
 let sortSongs = () => {
 	userData?.songs.sort((a, b) => {
