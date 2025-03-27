@@ -121,6 +121,7 @@ const playPreviousSong = () => {
 
 const highlightCurrentSong = () => {
 	const playlistSongElements = document.querySelectorAll('.playlist-song');
+	const songToHighlight = getElementById(`song-${userData?.currentSong?.id}`);
 };
 
 const renderSongs = (array) => {
