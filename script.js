@@ -100,8 +100,12 @@ const pauseSong = () => {
 };
 
 const playNextSong = () => {
-	if(userData?.currentSong === null) {playSong(userData?.songs[0].id)}
-}
+	if (userData?.currentSong === null) {
+		playSong(userData?.songs[0].id);
+	} else {
+		const getCurrentSongIndex = getCurrentSongIndex();
+	}
+};
 
 const renderSongs = (array) => {
 	const songsHTML = array
@@ -124,7 +128,7 @@ const renderSongs = (array) => {
 
 const getCurrentSongIndex = () => {
 	return userData?.songs.indexOf(userData?.currentSong);
-}
+};
 
 playButton.addEventListener('click', () => {
 	if (userData?.currentSong === null) {
