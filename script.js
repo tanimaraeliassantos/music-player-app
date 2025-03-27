@@ -109,6 +109,8 @@ const playNextSong = () => {
 	}
 };
 
+const playPreviousSong = () => {};
+
 const renderSongs = (array) => {
 	const songsHTML = array
 		.map((song) => {
