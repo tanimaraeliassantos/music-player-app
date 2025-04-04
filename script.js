@@ -129,6 +129,7 @@ const shuffle = () => {
 	renderSongs(userData?.songs);
 	pauseSong();
 	setPlayerDisplay();
+	setPlayButtonAccessibleText();
 };
 
 const setPlayerDisplay = () => {
