@@ -128,6 +128,7 @@ const shuffle = () => {
 	userData.songCurrentTime = 0;
 	renderSongs(userData?.songs);
 	pauseSong();
+	setPlayerDisplay();
 };
 
 const setPlayerDisplay = () => {
