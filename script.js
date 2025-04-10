@@ -194,6 +194,7 @@ playButton.addEventListener('click', () => {
 pauseButton.addEventListener('click', pauseSong);
 nextButton.addEventListener('click', playNextSong);
 previousButton.addEventListener('click', playNextSong);
+shuffleButton.addEventListener('click', shuffle);
 
 let sortSongs = () => {
 	userData?.songs.sort((a, b) => {
